@@ -1,0 +1,15 @@
+[package]
+name = "third-party-lamp-controller"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sifis-api = { git = "https://github.com/sifis-home/sifis-api.git" }
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+
+[dev-dependencies]
+anyhow = "1.0.75"
+assert_cmd = "2.0.12"
+tempfile = "3.8.0"

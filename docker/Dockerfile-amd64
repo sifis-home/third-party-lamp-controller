@@ -1,0 +1,3 @@
+FROM amd64/alpine
+ADD third-party-lamp-controller /
+ENTRYPOINT ["/third-party-lamp-controller"]
